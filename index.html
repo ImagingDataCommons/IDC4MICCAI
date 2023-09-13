@@ -24,11 +24,11 @@
       <section>
        
         <h2>Date: Sunday, Oct 8, 2023</h2>
-        <h2>Time: 8am-noon (PDT)</h2>
+        <h2>Time: 8am-12:30pm PDT</h2>
 <br><br>
-        <p><a href="https://imaging.datacommons.cancer.gov/">NCI Imaging Data Commons (IDC)</a> is a cloud-based repository of publicly available, real-world cancer imaging data co-located with the analysis and exploration tools and resources. IDC is a node within the broader <a href="https://datacommons.cancer.gov/">NCI Cancer Research Data Commons (CRDC)</a> infrastructure that provides secure access to , comprehensive, diverse, and expanding multi-modality collections of cancer research data, including genomics, proteomics, and clinical trial data. CRDC’s cloud-based infrastructure offers a number of advantages to researchers, including ubiquitous access to data and tools, elastic storage and compute (particularly on large datasets), access to readily available cloud-native AI/ML tools, and enhanced orchestration and automation of workflows.  As of January 2023, IDC hosts over 40 TB of public radiology and digital pathology images and image-derived data, all in standard DICOM representation, co-located with the tools to support search, visualization, and analysis of the data. </p>
+        <p><a href="https://imaging.datacommons.cancer.gov/">NCI Imaging Data Commons (IDC)</a> is a cloud-based repository of publicly available, real-world cancer imaging data co-located with the analysis and exploration tools and resources. IDC is a node within the broader <a href="https://datacommons.cancer.gov/">NCI Cancer Research Data Commons (CRDC)</a> infrastructure that provides secure access to , comprehensive, diverse, and expanding multi-modality collections of cancer research data, including genomics, proteomics, and clinical trial data. CRDC’s cloud-based infrastructure offers a number of advantages to researchers, including ubiquitous access to data and tools, elastic storage and compute (particularly on large datasets), access to readily available cloud-native AI/ML tools, and enhanced orchestration and automation of workflows.  As of September 2023, IDC hosts over 40 TB of public radiology and digital pathology images and image-derived data, all in standard DICOM representation, co-located with the tools to support search, visualization, and analysis of the data. </p>
 
-<p>IDC public data is available for cloud-based analysis or download in the public Google Storage buckets. IDC team is also working on providing the data in Amazon Web Services (AWS) buckets, which should be completed and released in time for MICCAI 2023. This tutorial will utilize a combination of lectures and hands-on exercises to introduce the attendees to the IDC and the main principles behind its development, and learn the basic skills of how to use IDC to search, visualize and download image data, and develop IDC-related AI workflows.</p>
+<p>IDC public data is available for cloud-based analysis or download in both Google Cloud Platform (GCP) and Amazon Web Services (AWS) environment. This tutorial will utilize a combination of lectures and hands-on exercises to introduce the attendees to the IDC and the main principles behind its development, and learn the basic skills of how to use IDC to search, visualize and download image data, and develop IDC-related AI workflows.</p>
 <br><br>
 
         <h2>Speakers</h2>
@@ -45,7 +45,45 @@
         
         <h2>Agenda</h2>
 
-<p>We are in the process of finalizing the agenda of the tutorial. Our plan is to split the time between the lectures and hands-on sessions. The lectures will introduce IDC and some of the main concepts behind it, and will demonstrate some of the use cases and applications that utilize IDC data. Hands-on session will provide instructions on how to get started with IDC, and will help attendees learn how to use some of the tools and datasets maintained by IDC. Tutorial will also include a Q&A session with the IDC developers and tutorial speakers.</p>
+
+<p>This is the first time we teach a tutorial about IDC at MICCAI, and for this first edition our goal is to give you highlights of the capabilities of IDC, and tools that you can use with IDC. We approach this with a series of brief lectures/presentation from both the developers/maintainers of IDC, but also collaborators and maintainers of the tools that can be used with IDC. Along with the lectures, we give you some highlights of the tutorials and interactive materials you can use to start using IDC for your work. Most importantly, we look to your feedback to improve both IDC and this tutorial for the future - please bring raise your questions and concerns at the discussion sessions that are spread through the program!</p>
+
+<h3><b>8:00-8:55</b> Part 1: Introduction to IDC</h3>
+
+<p>In this session you will learn about what is IDC and the foundation of the infrastructure and architecture that enable IDC.</p>
+
+<ul>
+  <li><b>~15 min - Overview of the tutorial and introduction to IDC</b> - Andrey Fedorov, BWH</li>
+  <li><b>~10 min - DICOM and its role in IDC</b> - David Clunie, PixelMed Publishing</li>
+  <li><b>~10 min - Google Medical Imaging Suite and IDC</b> - Marcos Novaes, Google</li>
+  <li><b>~10 min - Exploring IDC data on AWS using native services</b> - Steve Fu, Amazon</li>
+  <li><b>~10 min - Q&A and discussion</b></li>
+</ul>
+
+<h3><b>8:55-10:00</b> Part 2: Applications</h3>
+<p>In this session you will learn about some of the tools you can use with IDC, and examples of applications and analyses enabled by IDC.</p>
+
+<ul>
+  <li><b>~10 min - AI Visualization: jupyter notebooks (itkWidgets + MONAI) to javascript applications (VolView)</b> - Stephen Aylward, Kitware</li>
+  <li><b>~10 min - MHub: Making AI in medical imaging accessible and reproducible</b> - Leonard Nuernberg and Dennis Bontempi, BWH</li>
+  <li><b>~10 min - AIMI Annotations: Adding AI segmentations to IDC collections</b> - Jeff Van Oss, BAMF Health</li>
+  <li><b>~10 min - IDC as a platform for pathomics research</b> - Daniela Schacherer, Fraunhofer MEVIS</li>
+  <li><b>~10 min - Time- and cost-efficient analysis of the National Lung Screening Trial collection in IDC</b> - Andrey Fedorov, BWH</li>
+  <li><b>~10 min - Q&A and discussion</b></li>
+</ul>
+
+<h3><b>10:00-10:30</b> Coffee break</h3>
+
+<h3><b>10:30-12:00</b> Part 3: Hands-on tutorials and demonstrations</h3>
+<p>In this session we will give you an introduction on how to get started with using IDC, and demonstrate some of the results for selected use cases. Each of the three individual components of this session will consist of 25 min of hands-on activities/demonstrations and 5 minutes for the questions, followed by 30 min of discussion session.</p>
+
+<ul>
+  <li><b>~25+5 min - Getting started using IDC: Portal and Google Colab</b> - Andrey Fedorov, BWH</li>
+  <li><b>~25+5 min - Exploration and Quality Assurance of large analysis cohorts</b> - Andrey Fedorov and Deepa Krishnaswamy, BWH</li>
+  <li><b>~25+5 min - Using MHub with IDC data</b> - Leonard Nuernberg and Dennis Bontempi, BWH</li>
+  <li><b>~30 min - Q&A and panel with the presenters</b></li>
+</ul>
+
 
         <h2>Organizers</h2>
 
